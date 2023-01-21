@@ -6,7 +6,7 @@ on:
 
 env:
   AWS_REGION: ap-northeast-2         # 리전 설정
-  ECR_REPOSITORY: test-was           # 리포지토리 설정
+  ECR_REPOSITORY: test_was           # 리포지토리 설정
 
 permissions:
   contents: read
