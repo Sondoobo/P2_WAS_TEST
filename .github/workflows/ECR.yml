@@ -40,3 +40,4 @@ jobs:
       run: |
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG ./Test-WAS/                # 도커 컨테이너 이미지 빌드
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG                                # ECR로 푸쉬
+        echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
